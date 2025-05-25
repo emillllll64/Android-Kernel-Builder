@@ -163,6 +163,7 @@ jobs:
           MAKE_ARGS: ${{ steps.args.outputs.args }}
         run: |
           make $MAKE_ARGS
+          export CFLAGS="-Wno-error"
 
       # ------------------------------------------------------------
       #   UPLOAD ARTIFACTS  (using latest v4 tags)
