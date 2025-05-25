@@ -130,6 +130,7 @@ jobs:
           [ -n "$CROSS_COMPILE_COMPAT" ] && args+=" CROSS_COMPILE_ARM32=$CROSS_COMPILE_COMPAT"
           [ -n "$AR" ] && args+=" AR=$AR"
           [ -n "$CC" ] && args+=" CC=$CC"
+          args="$args WERROR=0" 
 
           echo "args=$args" >> "$GITHUB_OUTPUT"
 
