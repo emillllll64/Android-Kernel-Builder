@@ -3,7 +3,7 @@
       "name": "lgk52",
       "repo": "https://github.com/emillllll64/lg-k52-kernel-source",
       "branch": "master",
-      "device": "k52"
+      "device": "muse6765_64_hdk_s"
     },
     "withKernelSU": true,
     "toolchains": [
