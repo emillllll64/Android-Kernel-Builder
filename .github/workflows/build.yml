@@ -120,6 +120,7 @@ jobs:
           AR=$(echo "$params" | jq -r .AR)
           CC=$(echo "$params" | jq -r .CC)
 
+          args+=" KCPPFLAGS+=-Wno-error" 
           echo "ARCH=$ARCH" >> "$GITHUB_ENV"
 
           args="-j$(nproc)"
