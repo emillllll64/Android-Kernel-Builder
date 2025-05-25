@@ -1,9 +1,9 @@
 [  {
     "kernelSource": {
-      "name": "miku-KernelSU",
-      "repo": "https://github.com/PhamtomK12/kernel_xiaomi_odin",
-      "branch": "TDA",
-      "device": "odin"
+      "name": "lgk52",
+      "repo": "https://github.com/emillllll64/lg-k52-kernel-source",
+      "branch": "master",
+      "device": "k52"
     },
     "withKernelSU": true,
     "toolchains": [
