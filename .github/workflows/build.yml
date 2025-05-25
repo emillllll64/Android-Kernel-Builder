@@ -71,15 +71,13 @@ jobs:
         run: mkdir -p "$kernelDir"
 
       # ------------------------------------------------------------
-      - name: "⭐ Install prerequisites"
-        shell: bash
+      - name: Install prerequisites
         run: |
-          - sudo apt-get install -y build-essential bc curl git zip ftp \
--   gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi libssl-dev \
--   lftp zstd wget libfl-dev python2 python3 libarchive-tools
-+ sudo apt-get install -y build-essential bc curl git zip ftp \
-+   gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi libssl-dev \
-+   lftp zstd wget libfl-dev libarchive-tools jq
+           sudo apt-get update -y
+           sudo apt-get install -y \
+           build-essential bc curl git zip jq \
+           flex bison libssl-dev libarchive-tools \
+           zstd lftp wget
 
       # ------------------------------------------------------------
       - name: "🌟 Clone kernel source (${{ env.kernelRepo }})"
